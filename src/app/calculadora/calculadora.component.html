@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="rows operandos">
+        <div class="cols">
+            <label for="operadorA">Operador A </label>
+            <input type="number" class="form-control" placeholder="Valor de A" (input)="onGuardarA($event)" > 
+        </div>
+        <div class="cols">
+            <label for="operadorB">Operador B </label>
+            <input type="number" class="form-control" placeholder="Valor de B" (input)="onGuardarB($event)">
+        </div>
+        <div class="cols resultado">
+            <p>{{ resultado }}</p>
+        </div>
+    </div>
+    <div class="rows operaciones">
+        <button class="btn btn-primary" [disabled]="!sumar" (click)="onSumar()">Sumar</button>
+        <button class="btn btn-primary" [disabled]="!restar" (click)="onRestar()">Restar</button>
+        <button class="btn btn-primary" [disabled]="!multiplicar" (click)="onMultiplicar()">Multiplicar</button>
+        <button class="btn btn-primary" [disabled]="!dividir" (click)="onDividir()">Dividir</button>
+    </div>
+</div>

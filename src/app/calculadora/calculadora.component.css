@@ -1,0 +1,26 @@
+div .mandos{
+    justify-content: center;
+}
+
+div.operaciones > button{
+    margin: 5px;
+}
+
+div.operandos > div.cols{
+    margin-bottom: 20px;
+}
+
+div.operandos{
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.operaciones{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.operandos label{
+    font-weight: bold;
+}
